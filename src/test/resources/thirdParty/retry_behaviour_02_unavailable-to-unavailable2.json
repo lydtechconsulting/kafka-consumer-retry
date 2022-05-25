@@ -1,0 +1,13 @@
+{
+    "scenarioName": "Retry",
+    "requiredScenarioState": "Unavailable",
+    "newScenarioState": "Unavailable2",
+    "request": {
+        "method": "GET",
+        "urlPattern": "/api/kafkaretrydemo/.*"
+    },
+    "response": {
+        "status": 503,
+        "body": "Service Unavailable"
+    }
+}

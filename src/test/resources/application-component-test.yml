@@ -1,0 +1,10 @@
+---
+kafka:
+    bootstrap-servers: kafka:9092
+
+    consumer:
+        # Override to 10 seconds
+        maxPollIntervalMs: 10000
+
+kafkademo:
+    thirdpartyEndpoint: http://wiremock:8080/api/kafkaretrydemo/

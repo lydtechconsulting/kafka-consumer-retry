@@ -1,0 +1,16 @@
+spring:
+    application:
+        name: kafka-demo
+
+kafka:
+    consumer:
+        # Default to 30 seconds
+        maxPollIntervalMs: 30000
+
+server:
+    port: 9001
+
+kafkademo:
+    id: demo
+    thirdpartyEndpoint: https://retry.com/api/kafkaretrydemo/
+    outboundTopic : "demo-outbound-topic"
