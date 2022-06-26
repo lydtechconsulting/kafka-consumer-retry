@@ -2,6 +2,8 @@
 
 Spring Boot application demonstrating Kafka consumer retry.
 
+This repo accompanies the article [Kafka Consumer Retry](https://medium.com/lydtech-consulting/kafka-consumer-retry-646aa5aad2e4).
+
 ## Integration Tests
 
 Run integration tests with `mvn clean test`
