@@ -5,9 +5,9 @@ import java.util.UUID;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.jetbrains.annotations.NotNull;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.lang.NonNull;
 import org.springframework.validation.annotation.Validated;
 
 @Configuration
@@ -16,10 +16,10 @@ import org.springframework.validation.annotation.Validated;
 @Setter
 @Validated
 public class KafkaDemoProperties {
-    @NotNull private String id;
-    @NotNull private URL thirdpartyEndpoint;
-    @NotNull private String outboundTopic;
+    @NonNull private String id;
+    @NonNull private URL thirdpartyEndpoint;
+    @NonNull private String outboundTopic;
 
     // A unique Id for this instance of the service.
-    @NotNull private UUID instanceId = UUID.randomUUID();
+    @NonNull private UUID instanceId = UUID.randomUUID();
 }
