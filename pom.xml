@@ -41,7 +41,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.10</version>
+			<version>1.18.26</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -136,7 +136,7 @@
 								<wiremock.enabled>true</wiremock.enabled>
 								<wiremock.image.tag>2.32.0</wiremock.image.tag>
 								<wiremock.port>8080</wiremock.port>
-								<wiremock.container.logging.enabled>false</wiremock.container.logging.enabled>
+								<wiremock.container.logging.enabled>true</wiremock.container.logging.enabled>
 							</systemPropertyVariables>
 						</configuration>
 					</plugin>
